@@ -5,10 +5,26 @@ The documentation for this quickstart is maintained on developers.google.com.
 Please see here for more information:
 https://developers.google.com/glass/quickstart/java
 
-## Google AppEngine Support
+## AppEngine Fork
 
-This is a modified version of the example code that makes it possible run it on Google AppEngine platform. 
-Don't forget to edit appengine-web.xml and oauth.properties.
+The goal of this fork is to make the example app run on Google AppEngine.
+
+### List of Notable Changes
+
+* Add AppEngine dependencies to Maven POM
+* Drop direct Jetty dependency in favor of AppEngine
+* Replace deprecated shared memory credential store to AppEngine's own based on [Datastore](https://developers.google.com/appengine/docs/java/storage#app_engine_datastore)
+
+### Usage
+
+Edit appengine-web.xml and replace placeholders with your app ID and version.
+You also need to get oauth credentials to use Mirror API.
+
+Build and test app on your computer with `mvn appengine:devserver` command.
+
+Deploy your application into the cloud with `mvn appengine:update` command.
+
+Enjoy!
 
 
 ## License
