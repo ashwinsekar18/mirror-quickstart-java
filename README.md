@@ -7,13 +7,13 @@ https://developers.google.com/glass/quickstart/java
 
 ## AppEngine Fork
 
-The goal of this fork is to make the example app run on Google AppEngine.
+The goal of this fork is to make the sample app run on Google AppEngine.
 
 ### List of Notable Changes
 
-* Add AppEngine dependencies to Maven POM
-* Drop direct Jetty dependency in favor of AppEngine
-* Replace deprecated shared memory credential store to AppEngine's own based on [Datastore](https://developers.google.com/appengine/docs/java/storage#app_engine_datastore)
+* Added AppEngine dependencies to Maven POM
+* Dropped direct Jetty dependency in favour of AppEngine
+* Replaced deprecated shared memory credential store with AppEngine's own based on [Datastore](https://developers.google.com/appengine/docs/java/storage#app_engine_datastore)
 
 ### Usage
 
